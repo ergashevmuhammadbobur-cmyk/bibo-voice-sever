@@ -11,7 +11,7 @@ from groq import Groq
 app = FastAPI()
 GROQ_API_KEY =
 os.getenv("GROQ_API_KEY", "")
-client = Groqlapi_key=GROQ_API_KEY)
+client = Groq(api_key=GROQ_API_KEY)
 class VoiceChatin (Base Model):
 text: str
 voice: str = "uz-UZ-SardorNeural" #
